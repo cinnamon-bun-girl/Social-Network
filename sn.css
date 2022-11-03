@@ -27,7 +27,7 @@ body{
     /* size: auto; */
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (width: 700px) {
     .header-2 {   
       flex-direction: column;
     }
@@ -36,6 +36,18 @@ body{
     }
     .main-block{
         flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .Photo{
+        width: auto;
+        height: auto;
+    }
+    
+    .left-column{
+        flex:20%;
+    }
+    .Interractions{
+        flex-wrap: wrap;
     }
   }
 
@@ -44,14 +56,15 @@ body{
     background: #FFF7E2;
     color: #9C61A6;
     border: solid medium;
-    flex:20%;
+    
 }
 
 .main-column{
     display: flex;
     flex-direction: column;
-    flex:80%;
     width: auto;
+    flex:80%;
+    height: auto;
 }
 
 .left-menu {
@@ -68,7 +81,7 @@ body{
     flex-direction: row;
     background: #FADFFF;
     padding: 10px;
-    height: auto;
+    height: 35px;
     width: auto;
 }
 
@@ -81,15 +94,15 @@ body{
 .main-block-left{
     color: #9C61A6; 
     flex: 40%;
-    margin: 20px; 
-    display: flex;
+    margin: 10px;
+    display: block;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
 .Photo{
-    height: 465px;
-    width: 465px;
+    height: 300px;
+    width: auto;
     background: #FFD975;
     color: white;
     display: flex;
@@ -97,7 +110,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    -webkit-text-stroke: 1px ;
+    -webkit-text-stroke-width: 1px ;
     -webkit-text-stroke-color: #9C61A6;
     font-weight:900;
 }
@@ -105,12 +118,13 @@ body{
 .Interractions{
     display: flex;
     flex-direction: row;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     align-items: center;
     justify-content: space-between;
     width: auto;
     height: auto;
+    flex-wrap: nowrap;
 }
 
 .Message{
@@ -118,9 +132,10 @@ body{
     padding-left: 20px;
     padding-right: 20px;
     background: #FFD975;
-    font-size: 28px;
+    font-size: 20px;
     color: white;
     flex-wrap: wrap;
+    height: auto;
     text-align: center;
 }
 
@@ -130,7 +145,8 @@ body{
     padding-right: 20px;
     flex-wrap: wrap;
     background: #FFD975;
-    font-size: 28px;
+    font-size: 20px;
+    height: auto;
     color: white;
     text-align: center;
 }
@@ -169,14 +185,13 @@ body{
 .Friends{
     display: flex;
     width: auto;
-    height: 30px;
+    height: auto;
     text-align: left;
     align-items: center;
-    align-content: center;
     color: white;
     background: #9C61A6;
     font-size: 18px;
-    padding-left: 10px;
+    padding: 7px;
 }
 
 .squares{
@@ -184,8 +199,8 @@ body{
     align-content: center;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex-direction: row;
+    /* flex-wrap: wrap;
+    flex-direction: row; */
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -196,10 +211,9 @@ body{
     color: #9C61A6;
     background: #FFEEC1;
     border: solid thin;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-left: 5px;
 }
 
 .Friends-Online{
@@ -288,9 +302,9 @@ body{
 .main-block-right{
     color: #9C61A6; 
     flex: 60%;
-    margin: 20px; 
+    margin: 10px; 
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 

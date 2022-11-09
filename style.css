@@ -41,9 +41,7 @@ body{
       flex-direction: row;
       flex-wrap: wrap;
     }
-    .main-block{
-        flex-flow: column wrap;
-    }
+    
     .Photo{
         width: auto;
         height: auto;
@@ -59,9 +57,7 @@ body{
         justify-content: center;
         align-content: center;
     }
-    body{
-        width: auto;
-    }
+    
     .News{ /*Сделать имя и статус поменьше и в строку*/
         font-size: 20px;
         flex-wrap: nowrap;

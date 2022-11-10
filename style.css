@@ -47,7 +47,7 @@ body{
         flex: 60%;
     }
     .left-menu{
-        width: 20%;
+        flex: 20%;
     }
     .pictures{
         flex-wrap: nowrap;

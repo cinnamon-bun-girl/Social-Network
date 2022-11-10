@@ -72,6 +72,10 @@ body{
         justify-content: flex-start;
         align-content: flex-start;
     }
+    .squares{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 @media (min-width: 300px) and (max-width: 600px){

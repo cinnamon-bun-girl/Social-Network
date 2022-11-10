@@ -46,7 +46,7 @@ body{
     .main-block-right{
         flex: 60%;
     }
-    .left-menu{
+    .left-column{
         flex: 20%;
     }
     .pictures{

@@ -56,7 +56,7 @@ body{
     .fake-photo{
         flex-wrap: nowrap;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
     .News{
         font-size: 30px;

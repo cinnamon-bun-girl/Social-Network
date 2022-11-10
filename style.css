@@ -76,6 +76,10 @@ body{
         padding-left: 20px;
         padding-right: 20px;
     }
+    .left-menu{
+        width: auto;
+        flex:100%;
+    }
 }
 
 @media (min-width: 300px) and (max-width: 600px){
@@ -453,7 +457,6 @@ body{
     width: auto;
     margin-bottom: 15px;
     display: flex; 
-    justify-content: center;
 }
 
 .Picture{

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Насвязи</title>
+    </head>
+    <body>
+        <button id="btnCreate" >Create table</button>
+        <button id="btnAddRow" disabled>Add row</button>
+        <button id="btnRemoveRow" disabled>Remove row</button>
+        <input type="number" min="1" value="1" id="rowNumber" />
+       
+        <div id="container">
+
+        </div>
+
+        <script>
+
+            const container=document.getElementById('container');
+
+
+            document.getElementById("btnCreate").addEventListener("click", (e)=>{
+                if (document.getElementById('niceTable') != null){
+                    return;
+                }
+
+                const tableNode=document.createElement("table");
+                tableNode.id="niceTable";
+
+                document.getElementById("btnAddRow").disabled=false;
+                document.getElementById("btnRemoveRow").disabled=false;
+                document.getElementById("rowNumber").disabled=false;
+
+                e.target.disabled = true;
+
+                container.appendChild(tableNode);
+            });
+
+            document.getElementById("btnAddRow").addEventListener("click", ()=>{
+               
+                const table = document.getElementById('niceTable');
+
+                const tr = document.createElement("tr");
+
+                const tdNum = document.createElement("td");
+                tdNum.innerText = table.childNodes.length+1;
+
+                const tdVal = document.createElement("td");
+                tdVal.innerText = "value";
+
+                tr.appendChild(tdNum);
+                tr.appendChild(tdVal);
+
+                table.appendChild(tr);
+            });
+
+            document.getElementById("btnRemoveRow").addEventListener("click", ()=>{
+                const table = document.getElementById('niceTable');
+                const rowToRemove = parseInt(document.getElementById('rowNumber').value);
+                
+                table.childNodes[rowToRemove - 1].remove();
+            });
+
+        </script>
+    </body>
+</html>

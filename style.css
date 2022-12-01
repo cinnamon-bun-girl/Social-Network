@@ -26,6 +26,12 @@ body{
     flex-direction: row;
 }
 
+@media (min-width: 800px) and (max-width: 919px) { /*Доделать для неширокого экрана*/
+}
+
+@media (min-width: 920px) and (max-width: 1024px) { /*Доделать для неширокого экрана*/
+}
+
 @media (min-width: 1470px) and (max-width: 1920px) {
     body{
         width: 70%;
@@ -231,8 +237,8 @@ body{
 
 .Message{
     display: flex;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     background: #e1a93e;
     font-size: 20px;
     color: white;
@@ -246,8 +252,8 @@ body{
 .Be-friends{
     display: flex;
     border: solid thin #345E6F;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     flex-wrap: wrap;
     background: #e1a93e;
     font-size: 20px;
@@ -449,7 +455,7 @@ body{
     align-items: center;
     align-content: center;
     display: flex;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .pictures{
@@ -457,7 +463,7 @@ body{
     width: auto;
     margin-bottom: 15px;
     display: flex; 
-    justify-content:center;
+    justify-content: center;
 }
 
 .Picture{

@@ -1,0 +1,21 @@
+.task-card {
+    border:3px solid #345E6F;
+}
+.task-card span {
+    display: inline-block;
+    padding: 15px;
+    margin: 15px;
+}
+
+.task-card .task-card-fio  {
+    background-color: #b3c2c9;
+}
+
+.task-card .task-card-city  {
+    background-color: #f6e9cf;
+}
+
+.task-card .task-card-birthday {
+    background-color: #f6e9cf;
+}
+
